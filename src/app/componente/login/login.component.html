@@ -1,5 +1,5 @@
 <div class="bg-info container-fluid mx-auto my-auto m-2 p-2">
-  <Carousel>
+  <!-- <Carousel>
     <Carousel.Item>
       <img class="d-block w-100" src={Primeiro} alt="Primeiro slide"/>
     </Carousel.Item>
@@ -11,32 +11,85 @@
     <Carousel.Item>
       <img class="d-block w-100" src={Terceiro} alt="Third slide"/>
     </Carousel.Item>
-  </Carousel>
-  <div class='container-fluid col-md-8'>
+  </Carousel> -->
+  
+  <!-- <div class='container-fluid col-md-8'>
     <Form class="my-3">
-      <Form.Group controlId="formBasicEmail">
-        <Form.Label>Email</Form.Label>
-        <Form.Control type="email" placeholder="Digite email" />
-        <Form.Text>Nós nunca vamos compartilhar seu e-mail com mais ninguém.</Form.Text>
-      </Form.Group>
+      <div controlId="formBasicEmail">
+        <label>Email</label>
+        <input type="email" placeholder="Digite email" />
+        <p>Nós nunca vamos compartilhar seu e-mail com mais ninguém.</p>
+      </div>
 
-      <Form.Group controlId="formBasicPassword">
-        <Form.Label>Senha</Form.Label>
-        <Form.Control type="password" placeholder="Senha" />
-      </Form.Group>
+      <div controlId="formBasicPassword">
+        <label>Senha</label>
+        <input type="password" placeholder="Senha" />
+      </div>
       
-      <Form.Group controlId="formBasicChecbox">
-        <Form.Check type="checkbox" label="Manter conectado" />
-      </Form.Group>
+      <div controlId="formBasicChecbox">
+        <label type="checkbox" label="Manter conectado"></label>
+      </div>
       
-      <ButtonToolbar>
+      <div>
         <Button variant="light" type="submit"class="mx-auto my-3" href='/Adocao'>
           Entrar
         </Button>
         <Button variant="light" type="submit"class="mx-auto my-3" href='/Cadastro'>
           Cadastrar
         </Button>
-      </ButtonToolbar>
+      </div>
     </Form>
-  </div>
+  </div> -->
+
+<div class=" container-fluid">
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Senha</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Endereço</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Endereço 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Cidade</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputEstado">Estado</label>
+        <select id="inputEstado" class="form-control">
+          <option selected>Escolher...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputCEP">CEP</label>
+        <input type="text" class="form-control" id="inputCEP">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Clique em mim
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Entrar</button>
+  </form>
+</div>
+
+
+
 </div>
