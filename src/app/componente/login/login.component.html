@@ -1,3 +1,42 @@
-<p>
-  login works!
-</p>
+<div class="bg-info container-fluid mx-auto my-auto m-2 p-2">
+  <Carousel>
+    <Carousel.Item>
+      <img class="d-block w-100" src={Primeiro} alt="Primeiro slide"/>
+    </Carousel.Item>
+
+    <Carousel.Item>
+      <img class="d-block w-100" src={Segundo} alt="Segundo slide"/>
+    </Carousel.Item>
+
+    <Carousel.Item>
+      <img class="d-block w-100" src={Terceiro} alt="Third slide"/>
+    </Carousel.Item>
+  </Carousel>
+  <div class='container-fluid col-md-8'>
+    <Form class="my-3">
+      <Form.Group controlId="formBasicEmail">
+        <Form.Label>Email</Form.Label>
+        <Form.Control type="email" placeholder="Digite email" />
+        <Form.Text>Nós nunca vamos compartilhar seu e-mail com mais ninguém.</Form.Text>
+      </Form.Group>
+
+      <Form.Group controlId="formBasicPassword">
+        <Form.Label>Senha</Form.Label>
+        <Form.Control type="password" placeholder="Senha" />
+      </Form.Group>
+      
+      <Form.Group controlId="formBasicChecbox">
+        <Form.Check type="checkbox" label="Manter conectado" />
+      </Form.Group>
+      
+      <ButtonToolbar>
+        <Button variant="light" type="submit"class="mx-auto my-3" href='/Adocao'>
+          Entrar
+        </Button>
+        <Button variant="light" type="submit"class="mx-auto my-3" href='/Cadastro'>
+          Cadastrar
+        </Button>
+      </ButtonToolbar>
+    </Form>
+  </div>
+</div>
