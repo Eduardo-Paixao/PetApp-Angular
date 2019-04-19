@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AdocaoComponent } from './adocao/adocao.component';
+import { AdocaoComponent } from './componente/adocao/adocao.component';
+import { LoginComponent } from './componente/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdocaoComponent
+    AdocaoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
