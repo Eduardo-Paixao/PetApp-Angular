@@ -8,8 +8,8 @@ import { Animal1Component } from './componente/animal1/animal1.component';
 const routes: Routes = [
   {path : '', component : LoginComponent},
   {path : 'Adocao', component: AdocaoComponent},
-  {path : 'Animais', component: AnimaisComponent}
-
+  {path : 'Animais', component: AnimaisComponent},
+  {path : 'Animal1', component: Animal1Component}
 ];
 
 @NgModule({
