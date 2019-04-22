@@ -27,12 +27,12 @@
   </div>
 
 
-  <div class="col-md-8 mx-auto my-4 py-4 bg-light rounded">
+  <div class="col-md-8 mx-auto my-4 py-4 bg-light rounded container-fluid">
     <div class="text-center">
-      Cadastre que as características animal para resgate.
+      Preencha o formulario para que possamos resgatar o animal.
     </div>
-    <Form class="form-group">
-      <div>Tipo:
+    <Form class="form-group row my-3 mx-auto d-flex justify-content-around container-fluid">
+      <div class="col-md-5">Tipo:
         <div class="custom-control custom-checkbox">
           <input type="checkbox" class="custom-control-input" id="customCheck1">
           <label class="custom-control-label" for="customCheck1">Cachorro</label>
@@ -42,8 +42,8 @@
           <label class="custom-control-label" for="customCheck2">Gato</label>
         </div>
       </div>
-      <div>Porte:
-        <div class="custom-control custom-checkbox">
+      <div class="col-md-5">Porte:
+        <div class="custom-control col custom-checkbox">
           <input type="checkbox" class="custom-control-input" id="customCheck3">
           <label class="custom-control-label" for="customCheck3">Grande</label>
         </div>
@@ -55,33 +55,29 @@
           <input type="checkbox" class="custom-control-input" id="customCheck5">
           <label class="custom-control-label" for="customCheck5">Pequeno</label>
         </div>
-
-        <div>Sexo:
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck6">
-            <label class="custom-control-label" for="customCheck6">Macho</label>
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck7">
-            <label class="custom-control-label" for="customCheck7">Fêmea</label>
-          </div>
+      </div>
+      <div class="col-md-2">Sexo:
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck6">
+          <label class="custom-control-label" for="customCheck6">Macho</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck7">
+          <label class="custom-control-label" for="customCheck7">Fêmea</label>
         </div>
       </div>
-
-      <div controlId="formBasicEndereco" class="form-group">
-        <label>Endereço:</label>
-        <input type="endreco" class="form-control" placeholder="Digite seu endereço" />
-      </div>
-
-      <div controlId="formGridZip" class="form-group">
-        <label>CEP:</label>
-        <input type="cep" class="form-control" placeholder="Digite seu cep" />
-      </div>
-
-      <Button type="submit" class="mx-auto my-3 btn btn-primary d-flex" href='/Animais'>
-        Enviar
-      </Button>
     </Form>
+    <div controlId="formBasicEndereco" class="form-group">
+      <label>Endereço:</label>
+      <input type="endreco" class="form-control" placeholder="Digite seu endereço" />
+    </div>
 
+    <div controlId="formGridZip" class="form-group">
+      <label>CEP:</label>
+      <input type="cep" class="form-control" placeholder="Digite seu cep" />
+    </div>
+    <Button type="submit" class="mx-auto my-3 btn btn-primary d-flex" href='/Animais'>
+      Enviar
+    </Button>
   </div>
 </div>
